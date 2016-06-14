@@ -1,0 +1,13 @@
+/**
+ * 1. http://stackoverflow.com/questions/17045132/scrollbar-overlay-in-ie10-how-do-you-stop-that
+ */
+html {
+	height: 100%;
+	-ms-overflow-style: scrollbar; /* 1 */
+}
+
+body {
+	min-height: 100%;
+	position: relative;
+	font: normal 87.5%/1.4 Arial, Sans-Serif, "Microsoft YaHei";
+}
