@@ -8,18 +8,14 @@
 <link rel="stylesheet" href="styles/nebula.css"/>
 <style>
 body {
-	padding: 5rem;
+	padding: 3rem 5rem;
 }
-h2.mt3 {
-	border-bottom: thin solid #ccc;
+h2.bb {
+	margin-top: 4rem;
+	padding-bottom: 0.5rem;
 }
-pre {
-	padding: 2rem;
-	background: #eee;
-	overflow-x: auto;
-}
-p button,
-p .button {
+p button + button,
+p .button + .button {
 	margin: 0.5rem 1rem;
 }
 </style>
@@ -31,22 +27,28 @@ p .button {
 	<h1>Nebula CSS</h1>
 	<p>Nebula CSS is a lightweight semantic CSS framework designed for modern browsers.</p>
 
-	<h2 class="mt3">Heading</h2>
-	<h1>H1 Heading <code>40px</code></h1>
-	<h2>H2 Heading <code>32px</code></h2>
-	<h3>H3 Heading <code>28px</code></h3>
-	<h4>H4 Heading <code>24px</code></h4>
-	<h5>H5 Heading <code>20px</code></h5>
+	<h2 class="bb">Heading</h2>
+
+	<h1>H1 Heading <code>28px</code></h1>
+	<h2>H2 Heading <code>24px</code></h2>
+	<h3>H3 Heading <code>20px</code></h3>
+	<h4>H4 Heading <code>18px</code></h4>
+	<h5>H5 Heading <code>17px</code></h5>
 	<h6>H6 Heading <code>16px</code></h6>
 
 <pre>
-&lt;h1&gt;H1 Heading &lt;code&gt;40px&lt;/code&gt;&lt;/h1&gt;
-&lt;p class=&quot;h1&quot;&gt;H1 Heading&lt;/p&gt;
+&lt;h1&gt;H1 Heading &lt;code&gt;28px&lt;/code&gt;&lt;/h1&gt;
+&lt;p class=&quot;h1&quot;&gt;H1 Heading without margins&lt;/p&gt;
 </pre>
 
-	<h2 class="mt3">Paragraph</h2>
-	<p>Lorem ipsum dolor sit amet, <a href="#!">consectetur</a> adipiscing elit, sed do <del>eiusmod tempor</del> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <code>exercitation</code> ullamco laboris nisi ut aliquip ex ea <strong>commodo</strong> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <mark>cupidatat non proident</mark>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h2 class="bb">Paragraph</h2>
+
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h3>H3 Heading 1</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h3>H3 Heading 2</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, <a href="#!">consectetur</a> adipiscing elit, sed do <del>eiusmod tempor</del> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <code>exercitation</code> ullamco laboris nisi ut aliquip ex ea <strong>commodo</strong> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <mark>cupidatat non proident</mark>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <pre>
 &lt;a href=&quot;#!&quot;&gt;consectetur&lt;/a&gt;
@@ -55,39 +57,53 @@ p .button {
 &lt;mark&gt;cupidatat non proident&lt;/mark&gt;
 </pre>
 
-	<h2 class="mt3">Table</h2>
-	<p>
-		<table>
-			<caption>Default Table</caption>
-			<thead>
-				<tr>
-					<th>#</th>
-					<th>Make</th>
-					<th>Model</th>
-					<th>Year</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Honda</td>
-					<td>Accord</td>
-					<td>2009</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Toyota</td>
-					<td>Camry</td>
-					<td>2012</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Hyundai</td>
-					<td>Elantra</td>
-					<td>2010</td>
-				</tr>
-			</tbody>
-		</table>
+	<h2 class="bb">Blockquote</h2>
+
+	<blockquote>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		<p><cite>— Someone famous in Source Title</cite></p>
+	</blockquote>
+<pre>
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+	&lt;p&gt;&lt;cite&gt;— Someone famous in Source Title&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</pre>
+
+	<h2 class="bb">Table</h2>
+
+	<table>
+		<caption>Default Table</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Make</th>
+				<th>Model</th>
+				<th>Year</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Honda</td>
+				<td>Accord</td>
+				<td>2009</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Toyota</td>
+				<td>Camry</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Hyundai</td>
+				<td>Elantra</td>
+				<td>2010</td>
+			</tr>
+		</tbody>
+	</table>
+
 <pre>
 &lt;table&gt;
 	&lt;caption&gt;Default Table&lt;/caption&gt;
@@ -109,93 +125,93 @@ p .button {
 	&lt;/tbody&gt;
 &lt;/table&gt;
 </pre>
-	</p>
 
-	<p>
-		<table class="striped">
-			<caption>Striped Table</caption>
-			<thead>
-				<tr>
-					<th>#</th>
-					<th>Make</th>
-					<th>Model</th>
-					<th>Year</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Honda</td>
-					<td>Accord</td>
-					<td>2009</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Toyota</td>
-					<td>Camry</td>
-					<td>2012</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Hyundai</td>
-					<td>Elantra</td>
-					<td>2010</td>
-				</tr>
-			</tbody>
-		</table>
+	<table class="striped">
+		<caption>Striped Table</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Make</th>
+				<th>Model</th>
+				<th>Year</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Honda</td>
+				<td>Accord</td>
+				<td>2009</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Toyota</td>
+				<td>Camry</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Hyundai</td>
+				<td>Elantra</td>
+				<td>2010</td>
+			</tr>
+		</tbody>
+	</table>
+
 <pre>
 &lt;table class=&quot;striped&quot;&gt;
 	...
 &lt;/table&gt;
 </pre>
-	</p>
-	<p>
-		<table class="bordered striped">
-			<caption>Bordered & Striped Table</caption>
-			<thead>
-				<tr>
-					<th>#</th>
-					<th>Make</th>
-					<th>Model</th>
-					<th>Year</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Honda</td>
-					<td>Accord</td>
-					<td>2009</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Toyota</td>
-					<td>Camry</td>
-					<td>2012</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Hyundai</td>
-					<td>Elantra</td>
-					<td>2010</td>
-				</tr>
-			</tbody>
-		</table>
+
+	<table class="bordered striped">
+		<caption>Bordered & Striped Table</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Make</th>
+				<th>Model</th>
+				<th>Year</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Honda</td>
+				<td>Accord</td>
+				<td>2009</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Toyota</td>
+				<td>Camry</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Hyundai</td>
+				<td>Elantra</td>
+				<td>2010</td>
+			</tr>
+		</tbody>
+	</table>
+
 <pre>
 &lt;table class=&quot;bordered striped&quot;&gt;
 	...
 &lt;/table&gt;
 </pre>
-	</p>
 
+	<h2 class="bb">Button</h2>
 
-	<h2 class="mt3">Button</h2>
 	<p>
 		<button class="ripple">Default</button>
 		<button class="primary ripple">Primary</button>
 		<button class="ripple"><span class="iconify-inline" data-icon="mdi:magnify"></span> Default</button>
 		<button class="primary ripple"><span class="iconify-inline" data-icon="mdi:bell"></span> Primary</button>
 		<button class="primary ripple" disabled><span class="iconify-inline" data-icon="mdi:account"></span> Disabled</button>
+	</p>
+
 <pre>
 &lt;button class=&quot;ripple&quot;&gt;Default&lt;/button&gt;
 &lt;button class=&quot;primary ripple&quot;&gt;Primary&lt;/button&gt;
@@ -203,7 +219,6 @@ p .button {
 &lt;button class=&quot;primary ripple&quot;&gt;&lt;span class=&quot;iconify-inline&quot; data-icon=&quot;mdi:bell&quot;&gt;&lt;/span&gt; Primary&lt;/button&gt;
 &lt;button class=&quot;primary ripple&quot; disabled&gt;&lt;span class=&quot;iconify-inline&quot; data-icon=&quot;mdi:account&quot;&gt;&lt;/span&gt; Disabled&lt;/button&gt;
 </pre>
-	</p>
 
 	<p>
 		<a href="#!" class="button ripple">Default</a>
@@ -211,6 +226,8 @@ p .button {
 		<a href="#!" class="button ripple"><span class="iconify-inline" data-icon="mdi:magnify"></span> Default</a>
 		<a href="#!" class="button primary ripple"><span class="iconify-inline" data-icon="mdi:bell"></span> Primary</a>
 		<a href="#!" class="button primary ripple disabled"><span class="iconify-inline" data-icon="mdi:account"></span> Disabled</a>
+	</p>
+
 <pre>
 &lt;a href=&quot;#!&quot; class=&quot;button ripple&quot;&gt;Default&lt;/a&gt;
 &lt;a href=&quot;#!&quot; class=&quot;button primary ripple&quot;&gt;Primary&lt;/a&gt;
@@ -218,7 +235,6 @@ p .button {
 &lt;a href=&quot;#!&quot; class=&quot;button primary ripple&quot;&gt;&lt;span class=&quot;iconify-inline&quot; data-icon=&quot;mdi:bell&quot;&gt;&lt;/span&gt; Primary&lt;/a&gt;
 &lt;a href=&quot;#!&quot; class=&quot;button primary ripple disabled&quot;&gt;&lt;span class=&quot;iconify-inline&quot; data-icon=&quot;mdi:account&quot;&gt;&lt;/span&gt; Disabled&lt;/a&gt;
 </pre>
-	</p>
 
 	<p>
 		<button class="square ripple"><span class="iconify-inline" data-icon="mdi:bell"></span></button>
@@ -229,6 +245,8 @@ p .button {
 		<button class="circle primary ripple"><span class="iconify-inline" data-icon="mdi:bell"></span></button>
 		<button class="icon circle ripple"><span class="iconify-inline" data-icon="mdi:bell"></span></button>
 		<button class="icon circle" disabled><span class="iconify-inline" data-icon="mdi:bell"></span></button>
+	</p>
+
 <pre>
 &lt;button class=&quot;square ripple&quot;&gt;&lt;span class=&quot;iconify-inline&quot; data-icon=&quot;mdi:bell&quot;&gt;&lt;/span&gt;&lt;/button&gt;
 &lt;button class=&quot;square primary ripple&quot;&gt;&lt;span class=&quot;iconify-inline&quot; data-icon=&quot;mdi:bell&quot;&gt;&lt;/span&gt;&lt;/button&gt;
@@ -239,22 +257,22 @@ p .button {
 &lt;button class=&quot;icon circle ripple&quot;&gt;&lt;span class=&quot;iconify-inline&quot; data-icon=&quot;mdi:bell&quot;&gt;&lt;/span&gt;&lt;/button&gt;
 &lt;button class=&quot;icon circle&quot; disabled&gt;&lt;span class=&quot;iconify-inline&quot; data-icon=&quot;mdi:bell&quot;&gt;&lt;/span&gt;&lt;/button&gt;
 </pre>
-	</p>
 
+	<h2 class="bb">Form</h2>
 
-	<h2 class="mt3">Form</h2>
 	<p>
 		<input type="text" placeholder="Input"/>
 		<input type="password" placeholder="Password"/>
 		<input type="text" placeholder="Disabled" disabled/>
 		<button class="primary ripple">Submit</button>
+	</p>
+
 <pre>
 &lt;input type=&quot;text&quot; placeholder=&quot;Input&quot;/&gt;
 &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot;/&gt;
 &lt;input type=&quot;text&quot; placeholder=&quot;Disabled&quot; disabled/&gt;
 &lt;button class=&quot;primary ripple&quot;&gt;Submit&lt;/button&gt;
 </pre>
-	</p>
 
 	<p>
 		<select>
@@ -268,6 +286,8 @@ p .button {
 		</select>
 		<input type="file"/>
 		<input type="file" disabled/>
+	</p>
+
 <pre>
 &lt;select&gt;
 	&lt;option value=&quot;&quot;&gt;--Please choose an option--&lt;/option&gt;
@@ -281,7 +301,7 @@ p .button {
 &lt;input type=&quot;file&quot;/&gt;
 &lt;input type=&quot;file&quot; disabled/&gt;
 </pre>
-	</p>
+
 	<p>
 		<select multiple size="3">
 			<option value="">--Please choose an option--</option>
@@ -293,6 +313,8 @@ p .button {
 		</select>
 		<textarea rows="4" placeholder="Textarea"></textarea>
 		<textarea rows="4" placeholder="Textarea" disabled></textarea>
+	</p>
+
 <pre>
 &lt;select multiple size=&quot;3&quot;&gt;
 	&lt;option value=&quot;&quot;&gt;--Please choose an option--&lt;/option&gt;
@@ -305,22 +327,22 @@ p .button {
 &lt;textarea rows=&quot;4&quot; placeholder=&quot;Textarea&quot;&gt;&lt;/textarea&gt;
 &lt;textarea rows=&quot;4&quot; placeholder=&quot;Textarea&quot; disabled&gt;&lt;/textarea&gt;
 </pre>
-	</p>
 
+	<h2 class="bb">Radio & Checkbox</h2>
 
-	<h2 class="mt3">Radio & Checkbox</h2>
 	<p>
 		<input id="radio1" type="radio" name="radio" /><label for="radio1">Radio</label>
 		<input id="radio2" type="radio" name="radio" /><label for="radio2">单选框</label>
 		<input id="radio3" type="radio" name="radio1" disabled /><label for="radio3"> 單選框</label>
 		<input id="radio4" type="radio" name="radio2" checked disabled /><label for="radio4"> 單選框</label>
+	</p>
+
 <pre>
 &lt;input id=&quot;radio1&quot; type=&quot;radio&quot; name=&quot;radio&quot; /&gt;&lt;label for=&quot;radio1&quot;&gt;Radio&lt;/label&gt;
 &lt;input id=&quot;radio2&quot; type=&quot;radio&quot; name=&quot;radio&quot; /&gt;&lt;label for=&quot;radio2&quot;&gt;单选框&lt;/label&gt;
 &lt;input id=&quot;radio3&quot; type=&quot;radio&quot; name=&quot;radio1&quot; disabled /&gt;&lt;label for=&quot;radio3&quot;&gt; 單選框&lt;/label&gt;
 &lt;input id=&quot;radio4&quot; type=&quot;radio&quot; name=&quot;radio2&quot; checked disabled /&gt;&lt;label for=&quot;radio4&quot;&gt; 單選框&lt;/label&gt;
 </pre>
-	</p>
 
 	<p>
 		<input id="checkbox1" type="checkbox" /><label for="checkbox1">Checkbox</label>
@@ -328,6 +350,7 @@ p .button {
 		<input id="checkbox3" type="checkbox" disabled /><label for="checkbox3">複選框</label>
 		<input id="checkbox4" type="checkbox" checked disabled /><label for="checkbox4">複選框</label>
 	</p>
+
 <pre>
 &lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot; /&gt;&lt;label for=&quot;checkbox1&quot;&gt;Checkbox&lt;/label&gt;
 &lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot; /&gt;&lt;label for=&quot;checkbox2&quot;&gt;复选框&lt;/label&gt;
@@ -335,7 +358,8 @@ p .button {
 &lt;input id=&quot;checkbox4&quot; type=&quot;checkbox&quot; checked disabled /&gt;&lt;label for=&quot;checkbox4&quot;&gt;複選框&lt;/label&gt;
 </pre>
 
-	<h2 class="mt3">Pagination</h2>
+	<h2 class="bb">Pagination</h2>
+
 	<div class="pagination">
 		<a href="#!">1</a>
 		<span>&hellip;</span>
@@ -347,6 +371,7 @@ p .button {
 		<span>&hellip;</span>
 		<a href="#!">12</a>
 	</div>
+
 <pre>
 &lt;div class=&quot;pagination&quot;&gt;
 	&lt;a href=&quot;#!&quot;&gt;1&lt;/a&gt;
@@ -361,22 +386,24 @@ p .button {
 &lt;/div&gt;
 </pre>
 
-<h2 class="mt3">Loader</h2>
-<p>
-	<div class="loader"></div>
-	<div class="loader h5"></div>
-	<div class="loader h4"></div>
-	<div class="loader h3"></div>
-	<div class="loader h2"></div>
-	<div class="loader h1"></div>
-</p>
+	<h2 class="bb">Loader</h2>
+
+	<p>
+		<span class="loader"></span>
+		<span class="loader h5"></span>
+		<span class="loader h4"></span>
+		<span class="loader h3"></span>
+		<span class="loader h2"></span>
+		<span class="loader h1"></span>
+	</p>
+
 <pre>
-&lt;div class=&quot;loader&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;loader h5&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;loader h4&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;loader h3&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;loader h2&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;loader h1&quot;&gt;&lt;/div&gt;
+&lt;span class=&quot;loader&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;loader h5&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;loader h4&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;loader h3&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;loader h2&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;loader h1&quot;&gt;&lt;/span&gt;
 </pre>
 
 <script>
